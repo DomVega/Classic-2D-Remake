@@ -5,16 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 5.0f;
-    public float jump = 10.0f;
+    public float jump = 8.0f;
+    private Rigidbody2D rigidbody2d;
+    public bool groundCheck;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         PlayerMove();
     }
@@ -24,18 +26,13 @@ public class Player : MonoBehaviour
         //Controls
         float horizontal = Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
-        position.x = position.x + 5.0f * horizontal * Time.deltaTime;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
         transform.position = position;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && groundCheck == true)
         {
-            Jump();
+            rigidbody2d.velocity = Vector2.up * jump;
         }
     }
-
-    void Jump()
-    {
-        GetComponent<Rigidbody2D>().AddForce (Vector2.up * jump);
-    }
-
 }
+
