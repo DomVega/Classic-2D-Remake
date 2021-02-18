@@ -24,6 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        SceneManager.LoadScene("Level-1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
