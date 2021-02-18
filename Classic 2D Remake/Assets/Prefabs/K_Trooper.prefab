@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4103226585956260347}
   - component: {fileID: 4103226585956260346}
   - component: {fileID: 2335457677702007306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: K_Trooper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
