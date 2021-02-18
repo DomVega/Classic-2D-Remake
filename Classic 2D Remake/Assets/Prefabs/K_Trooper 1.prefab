@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 13926246401071492}
 =======
 >>>>>>> parent of 5fd1eaa (Attached player to camera)
-  m_Layer: 0
+  m_Layer: 8
   m_Name: K_Trooper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
