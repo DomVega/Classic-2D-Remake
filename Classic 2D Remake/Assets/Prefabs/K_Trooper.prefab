@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7166205089715992397}
   - component: {fileID: 7166205089715992396}
   - component: {fileID: 7166205089715992399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: K_Trooper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 7166205090471238691}
   - component: {fileID: 7166205090471238689}
   - component: {fileID: 7166205090471238688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
