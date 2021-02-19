@@ -1780,7 +1780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800604155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.48624068, y: 1.4693751, z: -9.036778}
+  m_LocalPosition: {x: -0.6661348, y: 1.4693751, z: -9.036778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2061701684}
@@ -3291,7 +3291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246048481}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.629039, y: -0.47245765, z: -9.036778}
+  m_LocalPosition: {x: -1.3665626, y: -0.47245765, z: -9.036778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 791139715}
@@ -5194,6 +5194,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1443467015}
     m_Modifications:
+    - target: {fileID: 398297138, guid: eddce5525a0cdd847867f40fcdb23c9c, type: 3}
+      propertyPath: sceneName
+      value: You Win!
+      objectReference: {fileID: 0}
     - target: {fileID: 311415641780790095, guid: eddce5525a0cdd847867f40fcdb23c9c,
         type: 3}
       propertyPath: m_RootOrder
