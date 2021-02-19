@@ -667,6 +667,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 251179908}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &252314386 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2741885456701212607, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7166205090272548822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &300921549
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,6 +5913,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7166205089715992394, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.531
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166205089715992394, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.666
+      objectReference: {fileID: 0}
     - target: {fileID: 7166205089715992395, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
         type: 3}
       propertyPath: m_RootOrder
@@ -5962,6 +5978,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7166205089715992396, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 252314386}
     - target: {fileID: 7166205089715992396, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
         type: 3}
       propertyPath: groundCheck

@@ -6,8 +6,11 @@ public class Player : MonoBehaviour
 {
     public float speed = 5.0f;
     public float jump = 8.0f;
+    float horizontal;
     private Rigidbody2D rigidbody2d;
     public bool groundCheck;
+
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -18,16 +21,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMove();
+        PlayerMove();  
     }
 
     void PlayerMove()
     {
         //Controls
-        float horizontal = Input.GetAxis("Horizontal");
+        horizontal = Input.GetAxis("Horizontal");
         Vector2 position = transform.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         transform.position = position;
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         if (Input.GetKeyDown(KeyCode.Space) && groundCheck == true)
         {
