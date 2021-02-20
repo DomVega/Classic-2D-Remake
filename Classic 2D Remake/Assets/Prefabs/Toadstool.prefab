@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9051207858333190011}
   - component: {fileID: 2485361942461490626}
   - component: {fileID: 1880410301516029607}
+  - component: {fileID: 4011235586379430085}
   m_Layer: 0
   m_Name: Toadstool
   m_TagString: Untagged
@@ -94,7 +95,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00005044043, y: 0.0006708801}
@@ -130,7 +131,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1880410301516029607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,3 +146,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   changeTime: 1.5
+--- !u!95 &4011235586379430085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5332475087660678502}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c03de592bfefd16438e49e56c749f988, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -94,6 +94,8 @@ public class Player : MonoBehaviour
         //PlayerPrefs.SetInt("Lives: ", lives);
         //PlayerPrefs.Save();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        animator.SetFloat("Lives", Mathf.Abs(lives));
     }
 
     /*void GameOver()

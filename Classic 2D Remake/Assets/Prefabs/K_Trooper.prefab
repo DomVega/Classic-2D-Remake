@@ -181,7 +181,7 @@ MonoBehaviour:
   jump: 8
   groundCheck: 1
   livesText: {fileID: 0}
-  lives: 0
+  lives: 3
   animator: {fileID: 2741885456701212607}
 --- !u!95 &2741885456701212607
 Animator:
@@ -290,4 +290,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7166205089715992398}
-  animator: {fileID: 2741885456701212607}
+  animator: {fileID: 0}
