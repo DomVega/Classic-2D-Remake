@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7166205089715992394}
   - component: {fileID: 7166205089715992397}
   - component: {fileID: 7166205089715992396}
-  - component: {fileID: 7166205089715992399}
   - component: {fileID: 2741885456701212607}
   m_Layer: 8
   m_Name: K_Trooper
@@ -149,20 +148,8 @@ MonoBehaviour:
   speed: 5
   jump: 8
   groundCheck: 0
+  livesText: {fileID: 0}
   animator: {fileID: 2741885456701212607}
---- !u!114 &7166205089715992399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7166205089715992398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd58edebce7e3640a60229835e2a7fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoDeath: 0
 --- !u!95 &2741885456701212607
 Animator:
   serializedVersion: 3
