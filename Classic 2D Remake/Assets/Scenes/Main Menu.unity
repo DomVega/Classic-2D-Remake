@@ -1770,7 +1770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fe2587c09e51eb44815c7ae472072dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playMusic: {fileID: 0}
+  playMusic: {fileID: 928123746}
 --- !u!1 &1058872567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +2971,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7166205089715992396, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 928123746}
     - target: {fileID: 7166205089715992398, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
         type: 3}
       propertyPath: m_Name
