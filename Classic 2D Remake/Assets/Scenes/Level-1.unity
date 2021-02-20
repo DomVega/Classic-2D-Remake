@@ -3241,7 +3241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198734739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9775627, y: -0.56945777, z: -9.036778}
+  m_LocalPosition: {x: -1.9775627, y: -0.56445765, z: -9.036778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 487423042}
@@ -5936,7 +5936,7 @@ PrefabInstance:
     - target: {fileID: 7166205089715992395, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.667
+      value: -2.662
       objectReference: {fileID: 0}
     - target: {fileID: 7166205089715992395, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
         type: 3}
@@ -5992,6 +5992,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: K_Trooper
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166205090471238688, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 252314386}
+    - target: {fileID: 7166205090471238689, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.30383795
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166205090471238689, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.03526184
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166205090471238689, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.022629708
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166205090471238689, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.083415285
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd, type: 3}

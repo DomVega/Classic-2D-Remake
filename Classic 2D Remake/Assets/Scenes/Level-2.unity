@@ -5528,11 +5528,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.57
       objectReference: {fileID: 0}
+    - target: {fileID: 7166205090471238688, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1972647762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd, type: 3}
 --- !u!4 &1972647761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7166205089715992395, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1972647760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1972647762 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2741885456701212607, guid: fd806f79eec2d8b45a5ab8cdc1e8d1bd,
     type: 3}
   m_PrefabInstance: {fileID: 1972647760}
   m_PrefabAsset: {fileID: 0}

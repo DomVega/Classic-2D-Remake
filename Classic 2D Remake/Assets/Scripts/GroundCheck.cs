@@ -5,6 +5,8 @@ using UnityEngine;
 public class GroundCheck : MonoBehaviour
 {
     public GameObject player; 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class GroundCheck : MonoBehaviour
         if (collision.collider.tag == "Ground")
         {
             player.GetComponent<Player>().groundCheck = true;
+            animator.SetBool("IsJumping", false);
         }
     }
 
@@ -30,6 +33,7 @@ public class GroundCheck : MonoBehaviour
        if (collision.collider.tag == "Ground")
         {
             player.GetComponent<Player>().groundCheck = false;
+            animator.SetBool("IsJumping", true);
         }
     }
 }
