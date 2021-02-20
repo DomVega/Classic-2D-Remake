@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 /*
 To Do
 1.Make Item block script 
-2.Code power ups
+2.Code taking damage and make checks for damage and size 
 3.Kill enemy
 4.Need power up animations and empty item block sprite.
-5.Migth need to rework enemy movement. Might need Block broking anim. and sprite.
+5.Might need to rework enemy movement. Might need Block breaking anim. and sprite.
+6.Maybe bounce projectile 
 */
 public class Player : MonoBehaviour
 {
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
             Die();
         }
     }
+    
     //Needs Rework
     void PlayerMove()
     {
@@ -78,6 +80,12 @@ public class Player : MonoBehaviour
     {
         livesText.text = "Lives: " + lives.ToString();
     }
+
+    /*public void Damage()
+    {
+        
+    }
+    */
     //moved Die method to player script for simplicity.
     public void Die()
     {
@@ -96,6 +104,5 @@ public class Player : MonoBehaviour
         }
     }
     */
-
 }
 
