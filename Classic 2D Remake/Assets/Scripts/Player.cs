@@ -25,10 +25,12 @@ public class Player : MonoBehaviour
     public int lives;
 
     public Animator animator;
+    public AudioSource jumpSound;
 
     // Start is called before the first frame update
     void Start()
     {
+        jumpSound = GetComponent<AudioSource>();
         //playerHealth = GetComponent<PlayerHealth>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         //lives = PlayerPrefs.GetInt("Lives: ", 4);
@@ -73,6 +75,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && groundCheck == true)
         {
             rigidbody2d.velocity = Vector2.up * jump;
+            jumpSound.Play();
         }
     }
     //Displays lives and sends player to main menu when lives reach 0.
