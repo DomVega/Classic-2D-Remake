@@ -47,4 +47,16 @@ public class Enemy : MonoBehaviour
             player.Die();
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Projectile"))
+        {
+            Destroy(this);
+            //tried to make enemy fall
+            /*gameObject.transform.localScale = new Vector3(1f,-1f,1f);
+            Physics.gravity = new Vector3(0, -1.0f,0);
+            */
+        }
+    }
 }

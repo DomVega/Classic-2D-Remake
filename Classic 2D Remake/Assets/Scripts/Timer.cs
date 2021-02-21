@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     float timer = 45f;
-    Text timerText;
+    public Text timerText;
     private bool timeIsRunning;
+    public GameObject player;
+    private Player playerScript;
 
     //public GameObject player;
 
@@ -15,13 +17,15 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerScript = player.GetComponent<Player>();
         timeIsRunning = true;
-        timerText = gameObject.GetComponent<Text>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        Player playerScript = player.gameObject.GetComponent<Player>();
         if (timeIsRunning)
         {
             if (timer > 0)
@@ -33,8 +37,9 @@ public class Timer : MonoBehaviour
 
             else 
             {
-                timer = 0;
-                timeIsRunning = false;
+                timer = 45;
+                timeIsRunning = true;
+                playerScript.Die();
             }
         }
     }

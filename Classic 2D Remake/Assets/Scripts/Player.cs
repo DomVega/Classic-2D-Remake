@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 
     public Animator animator;
     public AudioSource jumpSound;
+    //public GameObject deathZone;
 
     // Start is called before the first frame update
     void Start()
@@ -36,29 +37,19 @@ public class Player : MonoBehaviour
         //lives = PlayerPrefs.GetInt("Lives: ", 4);
         lives = 3;
         LivesText();
-     
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMove();  
-
-           /*if (lives <= 0)
-        {
-            lives = 3;
-            LivesText();
-            GameOver();
+        GameOver();
            
-        }
-        */
-        
-
-         if(gameObject.transform.position.y < -6)
+        if(gameObject.transform.position.y < -6)
         {
             Die();
         }
+        
     }
     
     //Needs Rework
@@ -89,25 +80,34 @@ public class Player : MonoBehaviour
         
     }
     */
-    //moved Die method to player script for simplicity.
+    //Kill Player. Subtracts Life. Respawns at Start.
     public void Die()
     {
+        Respawn();
         lives--;
-        LivesText();
-        //PlayerPrefs.SetInt("Lives: ", lives);
-        //PlayerPrefs.Save();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+        LivesText(); 
         animator.SetFloat("Lives", Mathf.Abs(lives));
     }
+    
+    /*void OnTriggerEnter2D(Collider2D DeathZone)
+    {
+        lives = lives - 1;
+        LivesText();
+        transform.position = new Vector3(-6f, -2.662f, 0f);
+    }
+    */
 
-    /*void GameOver()
+    void GameOver()
     {
         if(lives==0)
         {
             SceneManager.LoadScene("Main Menu");
         }
     }
-    */
+
+    public void Respawn()
+    {
+        transform.position = new Vector3(-6f, -2.662f, 0f);
+    }    
 }
 
