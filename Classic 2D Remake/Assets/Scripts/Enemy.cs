@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Projectile"))
         {
-            Destroy(this);
+            Destroy(gameObject);
             //tried to make enemy fall
             /*gameObject.transform.localScale = new Vector3(1f,-1f,1f);
             Physics.gravity = new Vector3(0, -1.0f,0);
